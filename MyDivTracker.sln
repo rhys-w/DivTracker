@@ -7,15 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDivTracker.AngularApp", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Data Layer", "1. Data Layer", "{0364EDF9-ADB4-49B1-90A0-8A57D0678632}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDivTracker.Data", "MyDivTracker.Data\MyDivTracker.Data.csproj", "{9A1FB0C8-D643-42F7-A863-8009A1313DDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDivTracker.Data", "MyDivTracker.Data\MyDivTracker.Data.csproj", "{9A1FB0C8-D643-42F7-A863-8009A1313DDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDivTracker.Data.EFCore", "MyDivTracker.Data.EFCore\MyDivTracker.Data.EFCore.csproj", "{E67431C6-ED9C-42AC-8A3C-B89AA7301512}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDivTracker.Data.EFCore", "MyDivTracker.Data.EFCore\MyDivTracker.Data.EFCore.csproj", "{E67431C6-ED9C-42AC-8A3C-B89AA7301512}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Service Layer", "2. Service Layer", "{88EFBD31-9960-4456-BC91-589997531361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDivTracker.Services", "MyDivTracker.Services\MyDivTracker.Services.csproj", "{822218BA-1FFD-45C7-9055-92A6CAD47D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDivTracker.Services", "MyDivTracker.Services\MyDivTracker.Services.csproj", "{822218BA-1FFD-45C7-9055-92A6CAD47D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDivTracker.Services.Dtos", "MyDivTracker.Services.Dtos\MyDivTracker.Services.Dtos.csproj", "{5799D158-F855-4543-B421-A6E67E4C0DD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDivTracker.Services.Dtos", "MyDivTracker.Services.Dtos\MyDivTracker.Services.Dtos.csproj", "{5799D158-F855-4543-B421-A6E67E4C0DD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDivTracker.WebApi", "MyDivTracker.WebApi\MyDivTracker.WebApi.csproj", "{33069577-223A-4825-A655-1CBF92682D8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{5799D158-F855-4543-B421-A6E67E4C0DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5799D158-F855-4543-B421-A6E67E4C0DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5799D158-F855-4543-B421-A6E67E4C0DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33069577-223A-4825-A655-1CBF92682D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33069577-223A-4825-A655-1CBF92682D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33069577-223A-4825-A655-1CBF92682D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33069577-223A-4825-A655-1CBF92682D8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

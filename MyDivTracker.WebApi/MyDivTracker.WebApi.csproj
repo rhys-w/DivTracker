@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -11,11 +11,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MyDivTracker.Data.EFCore\MyDivTracker.Data.EFCore.csproj" />
     <ProjectReference Include="..\MyDivTracker.Data\MyDivTracker.Data.csproj" />
+    <ProjectReference Include="..\MyDivTracker.Services\MyDivTracker.Services.csproj" />
   </ItemGroup>
 
 </Project>

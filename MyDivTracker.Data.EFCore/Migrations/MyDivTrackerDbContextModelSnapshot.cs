@@ -59,7 +59,7 @@ namespace MyDivTracker.Data.EFCore.Migrations
                         {
                             Id = new Guid("6add380f-9aa8-489a-afa3-bea7f6f10d28"),
                             Description = "General Acc. with Trading 212",
-                            IsIsa = true,
+                            IsIsa = false,
                             Name = "Trading 212 General Acc."
                         });
                 });

@@ -1,0 +1,30 @@
+<h1 id="tableLabel">Accounts</h1>
+
+<p>My Accounts</p>
+
+<p *ngIf="!accounts"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="accounts">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Is An Isa?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts">
+      <td>{{ account.name }}</td>
+      <td>{{ account.description }}</td>
+      <td>{{ account.isIsa | yesno }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Add an account:</p>
+
+<p>Account name:</p>
+
+<p>Account description:</p>
+
+<p>Is this account an ISA?:</p>

@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyDivTracker.Data.EFCore.DBContexts;
+using MyDivTracker.Data.EFCore.Repositories;
+using MyDivTracker.Data.Interfaces;
+using MyDivTracker.Services.Implementations;
+using MyDivTracker.Services.Interfaces;
 
 namespace MyDivTracker.AngularApp
 {
@@ -27,6 +30,9 @@ namespace MyDivTracker.AngularApp
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            services.AddScoped<IAccountsRepository, AccountsRepository>();
+            services.AddScoped<IAccountsService, AccountsService>();
 
             services.AddDbContext<MyDivTrackerDbContext>();
         }

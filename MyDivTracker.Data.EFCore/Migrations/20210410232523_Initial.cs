@@ -76,7 +76,7 @@ namespace MyDivTracker.Data.EFCore.Migrations
             migrationBuilder.InsertData(
                 table: "Account",
                 columns: new[] { "Id", "Description", "IsIsa", "Name" },
-                values: new object[] { new Guid("6add380f-9aa8-489a-afa3-bea7f6f10d28"), "General Acc. with Trading 212", true, "Trading 212 General Acc." });
+                values: new object[] { new Guid("6add380f-9aa8-489a-afa3-bea7f6f10d28"), "General Acc. with Trading 212", false, "Trading 212 General Acc." });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Dividend_AccountId",

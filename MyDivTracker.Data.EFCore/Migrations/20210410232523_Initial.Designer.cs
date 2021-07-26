@@ -10,7 +10,7 @@ using MyDivTracker.Data.EFCore.DBContexts;
 namespace MyDivTracker.Data.EFCore.Migrations
 {
     [DbContext(typeof(MyDivTrackerDbContext))]
-    [Migration("20210410211410_Initial")]
+    [Migration("20210410232523_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,7 +61,7 @@ namespace MyDivTracker.Data.EFCore.Migrations
                         {
                             Id = new Guid("6add380f-9aa8-489a-afa3-bea7f6f10d28"),
                             Description = "General Acc. with Trading 212",
-                            IsIsa = true,
+                            IsIsa = false,
                             Name = "Trading 212 General Acc."
                         });
                 });

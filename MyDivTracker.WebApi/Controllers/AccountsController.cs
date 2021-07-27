@@ -19,14 +19,14 @@ namespace MyDivTracker.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<AccountDto>> GetAccounts()
+        public async Task<IEnumerable<AccountDto>> GetAccountsAsync()
         {
             var accounts = await _accountsService.GetAccountsAsync();
             return accounts;
         }
 
         [HttpGet("{accountId}")]
-        public async Task<IActionResult> GetAccount(Guid accountId)
+        public async Task<IActionResult> GetAccountAsync(Guid accountId)
         {
             var account = await _accountsService.GetAccountAsync(accountId);
 
@@ -37,7 +37,7 @@ namespace MyDivTracker.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAccount([FromBody] AccountCreateDto createDto)
+        public async Task<IActionResult> CreateAccountAsync([FromBody] AccountCreateDto createDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest();

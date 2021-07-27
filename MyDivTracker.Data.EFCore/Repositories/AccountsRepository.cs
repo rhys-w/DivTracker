@@ -22,6 +22,11 @@ namespace MyDivTracker.Data.EFCore.Repositories
                 .ToListAsync();
         }
 
+        public async Task<Account> GetAccountAsync(Guid accountId)
+        {
+            return await _myDivTrackerDbContext.Accounts.FirstOrDefaultAsync(acc => acc.Id == accountId);
+        }
+
         public async Task InsertAndSaveAsync(Account account)
         {
             if (account == null) throw new ArgumentNullException();

@@ -21,8 +21,19 @@ namespace MyDivTracker.WebApi.Controllers
         [HttpGet]
         public async Task<IEnumerable<AccountDto>> GetAccounts()
         {
-            var accs = await _accountsService.GetAccountsAsync();
-            return accs;
+            var accounts = await _accountsService.GetAccountsAsync();
+            return accounts;
+        }
+
+        [HttpGet("{accountId}")]
+        public async Task<IActionResult> GetAccount(Guid accountId)
+        {
+            var account = await _accountsService.GetAccountAsync(accountId);
+
+            if (account == null)
+                return NotFound();
+
+            return Ok(account);
         }
 
         [HttpPost]
